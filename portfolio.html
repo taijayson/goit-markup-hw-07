@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo link" href="index.html">
+            <span class="logo-element">Web</span>
+            Studio
+          </a>
+    
+        <ul class="navigation__list list">
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="index.html">Студия</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link item" href="portfolio.html"><span class="navigation__list-underline"></span>Портфолио</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link link" href="">Контакты</a>
+          </li>
+        </ul>
+        </nav>
+        <address class="address">
+          <div class="header__address">
+            <ul class="address__list list">
+              <li class="address__list-item">
+                <a class="address__list-link link" href="mailto:info@example.com">
+                  <svg class="header__address-svg">
+                    <use href="./images/sprite.svg#mail"></use>
+                  </svg>
+                  info@example.com
+                </a>
+              </li>
+              <li class="address__list-item">
+                <a class="address__list-link link" href="tel:+380991111111">
+                  <svg class="header__address-svg">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 099 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Список проектов -->
+      <section class="projects">
+        <h1 hidden>Список проектов</h1>
+        <div class="container">
+          <ul class="projects__list list">
+            <li class="projects__list-item"><button class="modal-btn">Все</button></li>
+            <li class="projects__list-item"><button class="modal-btn">Веб-сайты</button></li>
+            <li class="projects__list-item"><button class="modal-btn">Приложения</button></li>
+            <li class="projects__list-item"><button class="modal-btn">Дизайн</button></li>
+            <li class="projects__list-item"><button class="modal-btn">Маркетинг</button></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Примеры работ -->
+      <section class="works">
+        <!-- <h2 class="works__list">Примеры работ</h2> -->
+        <div class="container">
+          <ul class="works__list list">
+            <li class="works__list-item">
+              <div class="works__upper">
+                <img class="works__list-img"
+                   src="./images/portfolio/technokryak.jpg"
+                  alt="Веб сайт технокряк"
+                />
+                <p class="works__list-text">Технокряк это современная площадка распространения коронавируса. Компании используют
+                    эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+                <h3 class="works__list-title">Технокряк</h3>
+                <p class="works__list-name">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/poster.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                />
+                <h3 class="works__list-title">Постер New Orlean vs Golden Star</h3>
+                <p class="works__list-name">Дизайн</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/seafood.jpg"
+                  alt="ресторан seafood"
+                />
+                <h3 class="works__list-title">Ресторан Seafood</h3>
+                <p class="works__list-name">Приложение</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/prime.jpg"
+                  alt="маркетинг проект Prime"
+                />
+                <h3 class="works__list-title">Проект Prime</h3>
+                <p class="works__list-name">Маркетинг</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/boxes.jpg"
+                  alt="приложение проекта Boxes"
+                />
+                <h3 class="works__list-title">Проект Boxes</h3>
+                <p class="works__list-name">Приложение</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/inspiration.jpg"
+                  alt="веб сайт Inspiration has no Borders"
+                />
+                <h3 class="works__list-title">Inspiration has no Borders</h3>
+                <p class="works__list-name">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/limited.jpg"
+                  alt="издание Limited Edition"
+                />
+                <h3 class="works__list-title">Издание Limited Edition</h3>
+                <p class="works__list-name">Дизайн</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img src="./images/portfolio/lab.jpg" alt="проект LAB" />
+                <h3 class="works__list-title">Проект LAB</h3>
+                <p class="works__list-name">Маркетинг</p>
+              </a>
+            </li>
+            <li class="works__list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/growing.jpg"
+                  alt="приложение Growing Business"
+                />
+                <h3 class="works__list-title">Growing Business</h3>
+                <p class="works__list-name">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__address-wrapper">
+          <a class="logo link" href="/index.html">
+            <span class="logo-element">Web</span>
+            <span class="footer__logo-element">Studio</span>
+          </a>
+          <address class="footer__address address">
+            <ul class="footer__address-list list">
+              <li class="footer__address-item">
+                <a class="footer__address-map link" href="https://goo.gl/maps/5HZnRqnJjsardYHZ7" target="_blank">г. Киев,
+                  пр-т
+                  Леси
+                  Украинки, 26
+                </a>
+              </li>
+              <li class="footer__address-item">
+                <a class="footer__address-link link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="footer__address-item">
+                <a class="footer__address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__social">
+          <p class="footer__social-agit">Присоединяйтесь</p>
+          <ul class="social__list list">
+            <li class="social__list-item">
+              <a href="#" class="social__list-link link footer__social-color">
+                <svg class="social__list-svg">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__list-link link footer__social-color">
+                <svg class="social__list-svg">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__list-link link footer__social-color">
+                <svg class="social__list-svg">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__list-link link footer__social-color">
+                <svg class="social__list-svg">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-agit">Подпишитесь на рассылку</p>
+          <div>
+            <input class="footer__subscribe-input" type="email" name="name" id="subscribe" placeholder="E-mail">
+            <button type="submit" class="footer__subscribe-button">Подписаться
+              <svg class="footer__subscribe-svg">
+                <use href="./images/sprite.svg#send">
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
