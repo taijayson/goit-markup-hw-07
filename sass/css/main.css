@@ -45,6 +45,16 @@ img {
   margin: 0 auto;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .container {
+  display: flex;
+}
+
 /* ========== COMPONENTS ========== */
 .logo-element {
   font-family: var(--secondary-font);
@@ -68,12 +78,6 @@ img {
 /* ========== HEADER ========== */
 .header {
   padding: 32px 0;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .navigation {
@@ -214,10 +218,6 @@ img {
 
 /* ========== END HERO ========== */
 /* ========== ABOUT ========== */
-.about .container {
-  display: flex;
-}
-
 .about__list {
   display: flex;
   flex-wrap: wrap;
@@ -598,8 +598,7 @@ img {
   background-color: var(--hero-color);
 }
 
-.hero__modalbtn:hover,
-.hero__modalbtn:focus {
+.hero__modalbtn:hover, .hero__modalbtn:focus {
   border-color: var(--accent-color);
 }
 

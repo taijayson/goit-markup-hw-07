@@ -45,6 +45,16 @@ img {
   margin: 0 auto;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .container {
+  display: flex;
+}
+
 /* ========== COMPONENTS ========== */
 .logo-element {
   font-family: var(--secondary-font);
@@ -69,12 +79,6 @@ img {
 .header {
   padding: 32px 0;
   border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .navigation {
