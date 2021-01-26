@@ -55,6 +55,22 @@ img {
   display: flex;
 }
 
+.footer .container {
+  display: flex;
+  padding: 60px 0px;
+  align-items: baseline;
+}
+
+.projects .container {
+  display: flex;
+  justify-content: center;
+}
+
+.team .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* ========== COMPONENTS ========== */
 .logo-element {
   font-family: var(--secondary-font);
@@ -97,7 +113,23 @@ img {
   margin-right: 93px;
 }
 
-.navigation__list-link,
+.navigation__list-item .active {
+  color: var(--accent-color);
+}
+
+.navigation__list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--headers-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__list-link:hover, .navigation__list-link:focus {
+  color: var(--accent-color);
+}
+
 .address__list-link {
   font-weight: 500;
   font-size: 14px;
@@ -107,14 +139,7 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__list-item .active {
-  color: var(--accent-color);
-}
-
-.navigation__list-link:hover,
-.address__list-link:hover,
-.navigation__list-link:focus,
-.address__list-link:focus {
+.address__list-link:hover, .address__list-link:focus {
   color: var(--accent-color);
 }
 
@@ -151,6 +176,11 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.address__list-link:hover .address__list-svg,
+.address__list-link:focus .address__list-svg {
+  fill: var(--accent-color);
+}
+
 .item {
   display: block;
   position: relative;
@@ -163,11 +193,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-
-.address__list-link:hover .address__list-svg,
-.address__list-link:focus .address__list-svg {
-  fill: var(--accent-color);
 }
 
 /* ========== END HEADER ========== */
@@ -198,8 +223,7 @@ img {
   color: var(--hero-color);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -259,11 +283,6 @@ img {
 
 /* ========== END ABOUT ========== */
 /* ========== WORKS ========== */
-.works .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .works {
   padding-bottom: 94px;
 }
@@ -305,11 +324,6 @@ img {
 
 /* ========== END WORKS ========== */
 /* ========== TEAM ========== */
-.team .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .team {
   background-color: #f5f4fa;
 }
@@ -375,14 +389,8 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__list-link:hover,
-.social__list-link:focus {
+.social__list-link:hover, .social__list-link:focus {
   background-color: var(--accent-color);
-}
-
-.social__list-link:hover .social__list-svg,
-.social__list-link:focus .social__list-svg {
-  fill: var(--hero-color);
 }
 
 .social__list-svg {
@@ -390,6 +398,11 @@ img {
   height: 20px;
   fill: var(--social-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__list-link:hover .social__list-svg,
+.social__list-link:focus .social__list-svg {
+  fill: var(--hero-color);
 }
 
 /* ========== END TEAM ========== */
@@ -419,14 +432,13 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__list-link:hover, .clients__list-link:focus {
+  border-color: var(--accent-color);
+}
+
 .clients__list-svg {
   fill: var(--social-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__list-link:hover,
-.clients__list-link:focus {
-  border-color: var(--accent-color);
 }
 
 .clients__list-link:hover .clients__list-svg,
@@ -442,12 +454,6 @@ img {
 /* ========== FOOTER ========== */
 .footer {
   background-color: #2f303a;
-}
-
-.footer .container {
-  display: flex;
-  padding: 60px 0px;
-  align-items: baseline;
 }
 
 .footer__logo-element {
@@ -659,8 +665,7 @@ img {
   outline: none;
 }
 
-.hero__modal-input:hover,
-.hero__modal-input:focus {
+.hero__modal-input:hover, .hero__modal-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -695,8 +700,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.hero__modal-comment:hover,
-.hero__modal-comment:focus {
+.hero__modal-comment:hover, .hero__modal-comment:focus {
   border: 1px solid var(--accent-color);
 }
 

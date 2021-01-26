@@ -12,4 +12,20 @@
   .about & {
     display: flex;
   }
+
+  .footer & {
+    display: flex;
+    padding: 60px 0px;
+    align-items: baseline;
+  }
+
+  .projects & {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team & {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
