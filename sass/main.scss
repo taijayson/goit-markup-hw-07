@@ -1,2 +1,13 @@
 @import "./base/common";
 @import "./base/container";
+@import "./base/components";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/backdrop";
+
+@import "./utils/variables";
